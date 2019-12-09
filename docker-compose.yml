@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  flight-finder:
+    build: .
+    image: flight-finder:0.0.1
+    env_file: .env
+    ports:
+      - "8080:8080"
